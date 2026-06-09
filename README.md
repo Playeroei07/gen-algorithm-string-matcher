@@ -34,3 +34,7 @@ In 1989, David E. Goldberg, a student of Holland, published "Genetic Algorithms 
   - It tests multiple combinations of Population Sizes (50, 100... up to 1000) and Mutation Rates (0.1, 0.2, 0.3).
   - For each combination, it runs the genetic algorithm until the word is found.
   - After all scenarios are tested, it finds the scenario that completed in the fewest number of generations and prints out a step-by-step summary of how the word evolved in that best scenario.
+
+---
+## Running The Program
+Just run autorun.bat where the batch script will automatically execute the genetic_algorithm.py inside the command prompt, allowing you to test it directly..
