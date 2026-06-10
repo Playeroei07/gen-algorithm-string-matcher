@@ -179,12 +179,12 @@ if start_search and run_allowed:
         ]
     ).interactive()
     
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(chart, width='stretch')
     # Data Table Expander
     with st.expander("View Complete Experiment Results Table", expanded=False):
         st.dataframe(
             df[['Population Size', 'Mutation Rate', 'Generations']].sort_values(by='Generations'),
-            use_container_width=True
+            width='stretch'
         )
         
     # ------------------------------------------
