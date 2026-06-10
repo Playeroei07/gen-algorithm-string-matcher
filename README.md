@@ -37,4 +37,4 @@ In 1989, David E. Goldberg, a student of Holland, published "Genetic Algorithms 
 
 ---
 ## Running The Program
-Just run autorun.bat where the batch script will automatically execute the genetic_algorithm.py inside the command prompt, allowing you to test it directly..
+Just run autorun.bat where the batch script will automatically install all requirements and execute genetic_algorithm.py with app.py inside the command prompt, allowing you to test it directly.
