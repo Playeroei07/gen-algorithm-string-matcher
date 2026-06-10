@@ -53,12 +53,13 @@ def crossover(parent1, parent2, target_num, crossover_probability):
     Combines two parents to create two children (Single-Point Crossover).
     A random cutoff point is chosen, and the genetic material is swapped.
     """
-    if random.random() < crossover_probability:
-        crossover_point = random.randint(1, len(target_num) - 1)
-        return (parent1[:crossover_point] + parent2[crossover_point:],
-                parent2[:crossover_point] + parent1[crossover_point:])
-    # If no crossover occurs, exact copies of the parents are returned
-    return parent1[:], parent2[:]
+    # If the target word has length 1 or less, crossover is not possible.
+    if len(target_num) <= 1 or random.random() >= crossover_probability:
+        return parent1[:], parent2[:]
+        
+    crossover_point = random.randint(1, len(target_num) - 1)
+    return (parent1[:crossover_point] + parent2[crossover_point:],
+            parent2[:crossover_point] + parent1[crossover_point:])
 
 def mutate(chromosome, mutation_rate):
     """

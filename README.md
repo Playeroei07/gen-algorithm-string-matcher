@@ -36,5 +36,27 @@ In 1989, David E. Goldberg, a student of Holland, published "Genetic Algorithms 
   - After all scenarios are tested, it finds the scenario that completed in the fewest number of generations and prints out a step-by-step summary of how the word evolved in that best scenario.
 
 ---
-## Running The Program
-Just run autorun.bat where the batch script will automatically install all requirements and execute genetic_algorithm.py with app.py inside the command prompt, allowing you to test it directly.
+## 🖥️ Running The Program
+
+You can run this project in two ways:
+
+### 1. Interactive CLI Program
+You can run the terminal-based simulator:
+- **On Windows:** Double-click `autorun.bat` to automatically launch the simulation in a command prompt.
+- **On any OS:** Run the script directly using Python:
+  ```bash
+  python genetic_algorithm.py
+  ```
+
+### 2. Streamlit Web Dashboard
+An interactive web-based dashboard is provided in `app.py` to customize parameters, run the grid search, and visualize results in real-time.
+
+To run the Streamlit dashboard:
+1. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Launch the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
